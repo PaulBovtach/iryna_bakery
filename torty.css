@@ -1,0 +1,131 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h5, h6{
+    margin: 0;
+}
+p{
+    margin: 0 0 10px;
+}
+/*HEADER_________________
+_______________________*/
+.header-wrapper{
+    height: 80px;
+    width: 100%;
+}
+
+.header{
+    box-shadow: 2px 4px 10px rgb(65, 63, 63);
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+    position: fixed;
+    background-color: #ece1de;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+.header-flex-wrap{
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+}
+.logo-header{
+    cursor: pointer;
+    width: 75px;
+}
+.navs{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav1{
+    margin-top: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #484f5b;
+    font-size: 27px;
+}
+.nav1-icon{
+    width: 50px;
+}
+.nav2{
+    margin-left: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #484f5b;
+    font-size: 27px;
+}
+.nav2-icon{
+    width: 50px;
+}
+.nav3{
+    margin-left: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #484f5b;
+    font-size: 27px;
+}
+.nav3-icon{
+    width: 50px;
+}
+.nav4{
+    margin-left: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #484f5b;
+    font-size: 27px;
+}
+.nav4-icon{
+    width: 50px;
+}
+.nav5{
+    margin-top: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #484f5b;
+    font-size: 27px;
+}
+.nav5-icon{
+    width: 50px;
+}
+.nav1-wrapper{
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+}
+.nav2-wrapper{
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+}
+.nav3-wrapper{
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+}
+.nav4-wrapper{
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+}
+.nav5-wrapper{
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+}
