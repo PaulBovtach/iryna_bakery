@@ -448,17 +448,6 @@ _______________________*/
     width: 40px;
     height: 40px;
 }
-.about-me-slider-btn-prev:hover{
-    transition: 0.2s;
-    width: 45px;
-    height: 45px;
-}
-.about-me-slider-btn-next:hover{
-        transition: 0.2s;
-    width: 45px;
-    height: 45px;
-}
-
 .slider-photo1{
     width: 426px;
     height: 640px;
@@ -806,7 +795,7 @@ _______________________*/
     padding-top: 25px;
     box-sizing: border-box;
     height: 400px;
-    background-color: #c9ccd0;
+    background-color: #484f5b;
 }
 .social-wrapper{
     margin-top: 30px;
@@ -824,7 +813,7 @@ _______________________*/
     width: 40px;
 }
 .contacts-h1{
-    color: #484f5b;
+    color: #c9ccd0;
     text-align: center;
     width: 100%;
     transition: 1s;
@@ -849,6 +838,6 @@ _______________________*/
     margin-right: auto;
     margin-top: 40px;
     text-decoration: none;
-    color: #484f5b;
+    color: #c9ccd0;
     font-size: 20px;
 }
