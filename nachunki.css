@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 body{
+    scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +16,18 @@ p{
 
 /*HEADER_________________
 _______________________*/
+
+
+.main-h1{
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #484f5b;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+
 .header-wrapper{
     height: 80px;
     width: 100%;
@@ -130,810 +143,909 @@ _______________________*/
     display: flex;
     box-sizing: border-box;
 }
+
+
+
+
+
+
 /*SLIDER1_________________
 _______________________*/
-
-.slider1-wrapper{
-    height: 750px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
+.sliders-wrapper{
+    padding-top: 150px;
+    background-color: #e5e3e1;
 }
+
+
 .slider1{
-    display: flex;
-    box-shadow: 2px 4px 30px #000;
-    width:403px;
+    margin-top: 40px;
     height: 600px;
-    overflow: hidden;
-    margin: 0px auto;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .slider1-line{
-    position: relative;
-    left: 0;
+    box-shadow: 2px 4px 30px #000;
     display: flex;
-    width:403px;
-    height: 600px;
-    transition: 1s;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
 }
+
 .img1{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img2{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img3{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img4{
-    width:403px;
-    height: 600px;
-}
-.slider1-prev{
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider1-prev:hover{
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider1-prev.none{
-    display: none;
-}
-
-.slider1-next{
-    visibility: visible;
-    margin-left: 363px;
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider1-next:hover{
-    opacity: 0.87;
-}
-.slider1-next.none{
-    visibility: hidden;
-}
-
-
-
-
-.slider1-dots-wrapper{
-    margin: 0px auto;
-    justify-content: space-evenly;
-    width: 140px;
-    display: flex;
-}
-
-.slider1-dot1{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider1-dot2{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider1-dot3{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider1-dot4{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.slider1-dot1:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider1-dot2:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider1-dot3:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider1-dot4:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-
-
-
-.slider1-dot1.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider1-dot2.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider1-dot3.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider1-dot4.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-
-
-
-
-
-
-/*SLIDER2_________________
-_______________________*/
-
-.slider2-wrapper{
-    height: 750px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-}
-.slider2{
-    display: flex;
-    box-shadow: 2px 4px 30px #000;
-    width:403px;
-    height: 600px;
-    overflow: hidden;
-    margin: 0px auto;
-}
-.slider2-line{
-    position: relative;
-    left: 0;
-    display: flex;
-    width:403px;
-    height: 600px;
-    transition: 1s;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img5{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
-.img6{
-    width:403px;
+
+
+
+.slider2{
     height: 600px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.slider2-line{
+    box-shadow: 2px 4px 30px #000;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.img6{
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img7{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img8{
-    width:403px;
-    height: 600px;
-}
-.slider2-prev{
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider2-prev:hover{
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider2-prev.none{
-    display: none;
-}
-
-.slider2-next{
-    visibility: visible;
-    margin-left: 363px;
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider2-next:hover{
-    opacity: 0.87;
-}
-.slider2-next.none{
-    visibility: hidden;
-}
-
-
-
-
-.slider2-dots-wrapper{
-    margin: 0px auto;
-    justify-content: space-evenly;
-    width: 140px;
-    display: flex;
-}
-
-.slider2-dot1{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider2-dot2{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider2-dot3{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider2-dot4{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.slider2-dot1:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider2-dot2:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider2-dot3:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider2-dot4:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-
-
-
-.slider2-dot1.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider2-dot2.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider2-dot3.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider2-dot4.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-
-
-
-
-
-
-
-
-.slider1-and-2-wrapper{
-    justify-content: space-evenly;
-    width: 100%;
-    display: flex;
-}
-
-
-
-
-
-
-
-
-
-/*SLIDER3_________________
-_______________________*/
-
-.slider3-wrapper{
-    height: 750px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-}
-.slider3{
-    display: flex;
-    box-shadow: 2px 4px 30px #000;
-    width:403px;
-    height: 600px;
-    overflow: hidden;
-    margin: 0px auto;
-}
-.slider3-line{
-    position: relative;
-    left: 0;
-    display: flex;
-    width:403px;
-    height: 600px;
-    transition: 1s;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img9{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img10{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
-.img11{
-    width:403px;
+
+
+
+.slider3{
     height: 600px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.slider3-line{
+    box-shadow: 2px 4px 30px #000;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.img11{
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img12{
-    width:403px;
-    height: 600px;
-}
-.slider3-prev{
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider3-prev:hover{
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider3-prev.none{
-    display: none;
-}
-
-.slider3-next{
-    visibility: visible;
-    margin-left: 363px;
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider3-next:hover{
-    opacity: 0.87;
-}
-.slider3-next.none{
-    visibility: hidden;
-}
-
-
-
-
-.slider3-dots-wrapper{
-    margin: 0px auto;
-    justify-content: space-evenly;
-    width: 140px;
-    display: flex;
-}
-
-.slider3-dot1{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider3-dot2{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider3-dot3{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider3-dot4{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.slider3-dot1:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider3-dot2:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider3-dot3:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider3-dot4:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-
-
-
-.slider3-dot1.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider3-dot2.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider3-dot3.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider3-dot4.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-
-
-
-
-
-
-
-
-/*SLIDER4_________________
-_______________________*/
-
-.slider4-wrapper{
-    height: 750px;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: column;
-}
-.slider4{
-    display: flex;
-    box-shadow: 2px 4px 30px #000;
-    width:403px;
-    height: 600px;
-    overflow: hidden;
-    margin: 0px auto;
-}
-.slider4-line{
-    position: relative;
-    left: 0;
-    display: flex;
-    width:403px;
-    height: 600px;
-    transition: 1s;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img13{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img14{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img15{
-    width:403px;
-    height: 600px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
-.img16{
-    width:403px;
+    
+
+
+.slider4{
     height: 600px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.slider4-line{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 4px 30px #000;
+    display: flex;
+    height: 400px;
+    width: 600px;
+    justify-content: space-evenly;
+}
+
+.img16{
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 .img17{
-    width:403px;
-    height: 600px;
-}
-.slider4-prev{
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider4-prev:hover{
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider4-prev.none{
-    display: none;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 400px;
+    width: 300px;
 }
 
-.slider4-next{
+
+
+.img1:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img2:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img3:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img4:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img5:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img6:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img7:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img8:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img9:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img10:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img11:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img12:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img13:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img14:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img15:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img16:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+.img17:hover{
+    transition: 0.2s;
+    filter: blur(4px);
+    height: 400px;
+    width: 300px;
+}
+
+.modal1.active{
+    cursor: pointer;
     visibility: visible;
-    margin-left: 363px;
-    margin-top: 150px;
-    transition: 0.3s;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
-    width: 40px;
-    border: none;
-    background-color: #000;
-    opacity: 0.3;
-}
-.slider4-next:hover{
-    opacity: 0.87;
-}
-.slider4-next.none{
-    visibility: hidden;
-}
-
-
-
-
-.slider4-dots-wrapper{
-    margin: 0px auto;
-    justify-content: space-evenly;
-    width: 170px;
-    display: flex;
-}
-
-.slider4-dot1{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider4-dot2{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider4-dot3{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider4-dot4{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-.slider4-dot5{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.slider4-dot1:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider4-dot2:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider4-dot3:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider4-dot4:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-.slider4-dot5:hover{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.7;
-}
-
-
-.slider4-dot1.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider4-dot2.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider4-dot3.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider4-dot4.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-.slider4-dot5.active{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #000;
-    opacity: 0.87;
-}
-
-
-
-
-
-.slider3-and-4-wrapper{
-    position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
 }
+
+.modal1{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img1-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal1-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal2.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal2{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img2-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal2-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal3.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal3{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img3-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal3-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal4.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal4{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img4-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal4-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal5.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal5{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img5-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal5-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal6.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal6{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img6-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal6-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal7.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal7{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img7-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal7-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal8.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal8{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img8-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal8-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal9.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal9{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img9-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal9-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal10.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal10{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img10-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal10-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal11.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal11{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img11-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal11-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal12.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal12{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img12-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal12-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal13.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal13{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img13-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal13-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal14.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal14{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img14-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal14-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal15.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal15{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img15-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal15-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal16.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal16{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img16-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal16-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal17.active{
+    cursor: pointer;
+    visibility: visible;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal17{
+    cursor: pointer;
+    visibility: hidden;
+    align-items: center;
+    z-index: 10001;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img17-modal{
+    opacity: 1;
+    width: 550px;
+}
+.modal17-content{
+    opacity: 1;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,705 +1,239 @@
-const sliderLine1 = document.querySelector('.slider1-line');
-let offset1 = 0;
-const next1 = document.querySelector('.slider1-next');
-const prev1 = document.querySelector('.slider1-prev');
-const dot1_1 = document.querySelector('.slider1-dot1');
-const dot1_2 = document.querySelector('.slider1-dot2');
-const dot1_3 = document.querySelector('.slider1-dot3');
-const dot1_4 = document.querySelector('.slider1-dot4');
+const img1 = document.querySelector('.img1');
+const img1Modal = document.querySelector('.modal1');
+const body = document.querySelector('.body')
 
-/*SLIDER1*______________________________________________________________*/
-
-document.querySelector('.slider1-next').addEventListener('click', function(){
-    offset1 = offset1 + 403 ;
-
-    if (offset1 > 806){
-        next1.classList.add('none')
-    } else if(offset1 < 1209) {
-        next1.classList.remove('none')
-    }
-
-    if (offset1 < 403){
-        prev1.classList.add('none')
-    } else if (offset1 >= 403) {
-        prev1.classList.remove('none')
-    }
+img1.addEventListener('click', function(){
+    img1Modal.classList.add('active');
+    body.style.overflow = 'hidden';
     
+})
+img1Modal.addEventListener('click', function(){
+    img1Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img2 = document.querySelector('.img2');
+const img2Modal = document.querySelector('.modal2');
 
-
-
-
-
-    if (offset1 == 0){
-        dot1_1.classList.add('active')
-    } else {
-        dot1_1.classList.remove('active')
-    }
-
-    if (offset1 == 403){
-        dot1_2.classList.add('active')
-    } else {
-        dot1_2.classList.remove('active')
-    }
-
-    if (offset1 == 806){
-        dot1_3.classList.add('active')
-    } else {
-        dot1_3.classList.remove('active')
-    }
-
-    if (offset1 == 1209){
-        dot1_4.classList.add('active')
-    } else {
-        dot1_4.classList.remove('active')
-    }
-
-    sliderLine1.style.left = -offset1 + 'px';
-});
-
-
-
-
-document.querySelector('.slider1-prev').addEventListener('click', function(){
-    offset1 = offset1 - 403 ;
-
-    if (offset1 > 806){
-        next1.classList.add('none')
-    } else if(offset1 < 1209) {
-        next1.classList.remove('none')
-    }
-
-    if (offset1 < 403){
-        prev1.classList.add('none')
-    } else if (offset1 >= 403) {
-        prev1.classList.remove('none')
-    }
-
-
-
-
-
-
-
-    if (offset1 == 0){
-        dot1_1.classList.add('active')
-    } else{
-        dot1_1.classList.remove('active')
-    }
-
-    if (offset1 == 403){
-        dot1_2.classList.add('active')
-    } else {
-        dot1_2.classList.remove('active')
-    }
-
-    if (offset1 == 806){
-        dot1_3.classList.add('active')
-    } else {
-        dot1_3.classList.remove('active')
-    }
-
-    if (offset1 == 1209){
-        dot1_4.classList.add('active')
-    } else {
-        dot1_4.classList.remove('active')
-    }
-
-    sliderLine1.style.left = -offset1 + 'px';
-});
-
-
-dot1_1.addEventListener('click', function(){
-    offset1 = 0
-    sliderLine1.style.left = -offset1 + 'px';
-
-    this.classList.add('active')
-    dot1_2.classList.remove('active')
-    dot1_3.classList.remove('active')
-    dot1_4.classList.remove('active')
-
-    prev1.classList.add('none')
-    next1.classList.remove('none')
-});
-
-dot1_2.addEventListener('click', function(){
-    offset1 = 403
-    sliderLine1.style.left = -offset1 + 'px';
-
-    this.classList.add('active')
-    dot1_1.classList.remove('active')
-    dot1_3.classList.remove('active')
-    dot1_4.classList.remove('active')
-
-    prev1.classList.remove('none')
-    next1.classList.remove('none')
-});
-
-dot1_3.addEventListener('click', function(){
-    offset1 = 806
-    sliderLine1.style.left = -offset1 + 'px';
-
-    this.classList.add('active')
-    dot1_2.classList.remove('active')
-    dot1_1.classList.remove('active')
-    dot1_4.classList.remove('active')
-
-    prev1.classList.remove('none')
-    next1.classList.remove('none')
-});
-
-dot1_4.addEventListener('click', function(){
-    offset1 = 1209
-    sliderLine1.style.left = -offset1 + 'px';
-
-    this.classList.add('active')
-    dot1_2.classList.remove('active')
-    dot1_3.classList.remove('active')
-    dot1_1.classList.remove('active')
-
-    next1.classList.add('none')
-    prev1.classList.remove('none')
-});
-
-/*SLIDER2*______________________________________________________________*/
-
-const sliderLine2 = document.querySelector('.slider2-line');
-let offset2 = 0;
-const next2 = document.querySelector('.slider2-next');
-const prev2 = document.querySelector('.slider2-prev');
-const dot2_1 = document.querySelector('.slider2-dot1');
-const dot2_2 = document.querySelector('.slider2-dot2');
-const dot2_3 = document.querySelector('.slider2-dot3');
-const dot2_4 = document.querySelector('.slider2-dot4');
-
-
-
-document.querySelector('.slider2-next').addEventListener('click', function(){
-    offset2 = offset2 + 403 ;
-
-    if (offset2 > 806){
-        next2.classList.add('none')
-    } else if(offset2 < 1209) {
-        next2.classList.remove('none')
-    }
-
-    if (offset2 < 403){
-        prev2.classList.add('none')
-    } else if (offset2 >= 403) {
-        prev2.classList.remove('none')
-    }
+img2.addEventListener('click', function(){
+    img2Modal.classList.add('active');
+    body.style.overflow = 'hidden';
     
+})
+img2Modal.addEventListener('click', function(){
+    img2Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img3 = document.querySelector('.img3');
+const img3Modal = document.querySelector('.modal3');
 
-
-
-
-
-    if (offset2 == 0){
-        dot2_1.classList.add('active')
-    } else {
-        dot2_1.classList.remove('active')
-    }
-
-    if (offset2 == 403){
-        dot2_2.classList.add('active')
-    } else {
-        dot2_2.classList.remove('active')
-    }
-
-    if (offset2 == 806){
-        dot2_3.classList.add('active')
-    } else {
-        dot2_3.classList.remove('active')
-    }
-
-    if (offset2 == 1209){
-        dot2_4.classList.add('active')
-    } else {
-        dot2_4.classList.remove('active')
-    }
-
-    sliderLine2.style.left = -offset2 + 'px';
-});
-
-
-
-
-document.querySelector('.slider2-prev').addEventListener('click', function(){
-    offset2 = offset2 - 403 ;
-
-    if (offset2 > 806){
-        next2.classList.add('none')
-    } else if(offset2 < 1209) {
-        next2.classList.remove('none')
-    }
-
-    if (offset2 < 403){
-        prev2.classList.add('none')
-    } else if (offset2 >= 403) {
-        prev2.classList.remove('none')
-    }
-
-
-
-
-
-
-
-    if (offset2 == 0){
-        dot2_1.classList.add('active')
-    } else{
-        dot2_1.classList.remove('active')
-    }
-
-    if (offset2 == 403){
-        dot2_2.classList.add('active')
-    } else {
-        dot2_2.classList.remove('active')
-    }
-
-    if (offset2 == 806){
-        dot2_3.classList.add('active')
-    } else {
-        dot2_3.classList.remove('active')
-    }
-
-    if (offset2 == 1209){
-        dot2_4.classList.add('active')
-    } else {
-        dot2_4.classList.remove('active')
-    }
-
-    sliderLine2.style.left = -offset2 + 'px';
-});
-
-
-dot2_1.addEventListener('click', function(){
-    offset2 = 0
-    sliderLine2.style.left = -offset2 + 'px';
-
-    this.classList.add('active')
-    dot2_2.classList.remove('active')
-    dot2_3.classList.remove('active')
-    dot2_4.classList.remove('active')
-
-    prev2.classList.add('none')
-    next2.classList.remove('none')
-});
-
-dot2_2.addEventListener('click', function(){
-    offset2 = 403
-    sliderLine2.style.left = -offset2 + 'px';
-
-    this.classList.add('active')
-    dot2_1.classList.remove('active')
-    dot2_3.classList.remove('active')
-    dot2_4.classList.remove('active')
-
-    prev2.classList.remove('none')
-    next2.classList.remove('none')
-});
-
-dot2_3.addEventListener('click', function(){
-    offset2 = 806
-    sliderLine2.style.left = -offset2 + 'px';
-
-    this.classList.add('active')
-    dot2_2.classList.remove('active')
-    dot2_1.classList.remove('active')
-    dot2_4.classList.remove('active')
-
-    prev2.classList.remove('none')
-    next2.classList.remove('none')
-});
-
-dot2_4.addEventListener('click', function(){
-    offset2 = 1209
-    sliderLine2.style.left = -offset2 + 'px';
-
-    this.classList.add('active')
-    dot2_2.classList.remove('active')
-    dot2_3.classList.remove('active')
-    dot2_1.classList.remove('active')
-
-    next2.classList.add('none')
-    prev2.classList.remove('none')
-});
-
-
-
-
-
-
-
-
-/*SLIDER3*______________________________________________________________*/
-
-const sliderLine3 = document.querySelector('.slider3-line');
-let offset3 = 0;
-const next3 = document.querySelector('.slider3-next');
-const prev3 = document.querySelector('.slider3-prev');
-const dot3_1 = document.querySelector('.slider3-dot1');
-const dot3_2 = document.querySelector('.slider3-dot2');
-const dot3_3 = document.querySelector('.slider3-dot3');
-const dot3_4 = document.querySelector('.slider3-dot4');
-
-
-
-document.querySelector('.slider3-next').addEventListener('click', function(){
-    offset3 = offset3 + 403 ;
-
-    if (offset3 > 806){
-        next3.classList.add('none')
-    } else if(offset3 < 1209) {
-        next3.classList.remove('none')
-    }
-
-    if (offset3 < 403){
-        prev3.classList.add('none')
-    } else if (offset3 >= 403) {
-        prev3.classList.remove('none')
-    }
+img3.addEventListener('click', function(){
+    img3Modal.classList.add('active');
+    body.style.overflow = 'hidden';
     
+})
+img3Modal.addEventListener('click', function(){
+    img3Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img4 = document.querySelector('.img4');
+const img4Modal = document.querySelector('.modal4');
 
-
-
-
-
-    if (offset3 == 0){
-        dot3_1.classList.add('active')
-    } else {
-        dot3_1.classList.remove('active')
-    }
-
-    if (offset3 == 403){
-        dot3_2.classList.add('active')
-    } else {
-        dot3_2.classList.remove('active')
-    }
-
-    if (offset3 == 806){
-        dot3_3.classList.add('active')
-    } else {
-        dot3_3.classList.remove('active')
-    }
-
-    if (offset3 == 1209){
-        dot3_4.classList.add('active')
-    } else {
-        dot3_4.classList.remove('active')
-    }
-
-    sliderLine3.style.left = -offset3 + 'px';
-});
-
-
-
-
-document.querySelector('.slider3-prev').addEventListener('click', function(){
-    offset3 = offset3 - 403 ;
-
-    if (offset3 > 806){
-        next3.classList.add('none')
-    } else if(offset3 < 1209) {
-        next3.classList.remove('none')
-    }
-
-    if (offset3 < 403){
-        prev3.classList.add('none')
-    } else if (offset3 >= 403) {
-        prev3.classList.remove('none')
-    }
-
-
-
-
-
-
-
-    if (offset3 == 0){
-        dot3_1.classList.add('active')
-    } else{
-        dot3_1.classList.remove('active')
-    }
-
-    if (offset3 == 403){
-        dot3_2.classList.add('active')
-    } else {
-        dot3_2.classList.remove('active')
-    }
-
-    if (offset3 == 806){
-        dot3_3.classList.add('active')
-    } else {
-        dot3_3.classList.remove('active')
-    }
-
-    if (offset3 == 1209){
-        dot3_4.classList.add('active')
-    } else {
-        dot3_4.classList.remove('active')
-    }
-
-    sliderLine3.style.left = -offset3 + 'px';
-});
-
-
-dot3_1.addEventListener('click', function(){
-    offset3 = 0
-    sliderLine3.style.left = -offset3 + 'px';
-
-    this.classList.add('active')
-    dot3_2.classList.remove('active')
-    dot3_3.classList.remove('active')
-    dot3_4.classList.remove('active')
-
-    prev3.classList.add('none')
-    next3.classList.remove('none')
-});
-
-dot3_2.addEventListener('click', function(){
-    offset3 = 403
-    sliderLine3.style.left = -offset3 + 'px';
-
-    this.classList.add('active')
-    dot3_1.classList.remove('active')
-    dot3_3.classList.remove('active')
-    dot3_4.classList.remove('active')
-
-    prev3.classList.remove('none')
-    next3.classList.remove('none')
-});
-
-dot3_3.addEventListener('click', function(){
-    offset3 = 806
-    sliderLine3.style.left = -offset3 + 'px';
-
-    this.classList.add('active')
-    dot3_2.classList.remove('active')
-    dot3_1.classList.remove('active')
-    dot3_4.classList.remove('active')
-
-    prev3.classList.remove('none')
-    next3.classList.remove('none')
-});
-
-dot3_4.addEventListener('click', function(){
-    offset3 = 1209
-    sliderLine3.style.left = -offset3 + 'px';
-
-    this.classList.add('active')
-    dot3_2.classList.remove('active')
-    dot3_3.classList.remove('active')
-    dot3_1.classList.remove('active')
-
-    next3.classList.add('none')
-    prev3.classList.remove('none')
-});
-
-
-
-
-
-
-
-/*SLIDER4*______________________________________________________________*/
-
-const sliderLine4 = document.querySelector('.slider4-line');
-let offset4 = 0;
-const next4 = document.querySelector('.slider4-next');
-const prev4 = document.querySelector('.slider4-prev');
-const dot4_1 = document.querySelector('.slider4-dot1');
-const dot4_2 = document.querySelector('.slider4-dot2');
-const dot4_3 = document.querySelector('.slider4-dot3');
-const dot4_4 = document.querySelector('.slider4-dot4');
-const dot4_5 = document.querySelector('.slider4-dot5');
-
-
-
-document.querySelector('.slider4-next').addEventListener('click', function(){
-    offset4 = offset4 + 403 ;
-
-    if (offset4 > 1209){
-        next4.classList.add('none')
-    } else if(offset4 < 1209) {
-        next4.classList.remove('none')
-    }
-
-    if (offset4 < 403){
-        prev4.classList.add('none')
-    } else if (offset4 >= 403) {
-        prev4.classList.remove('none')
-    }
+img4.addEventListener('click', function(){
+    img4Modal.classList.add('active');
+    body.style.overflow = 'hidden';
     
+})
+img4Modal.addEventListener('click', function(){
+    img4Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
+
+
+const img5 = document.querySelector('.img5');
+const img5Modal = document.querySelector('.modal5');
+
+img5.addEventListener('click', function(){
+    img5Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img5Modal.addEventListener('click', function(){
+    img5Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
 
+const img6 = document.querySelector('.img6');
+const img6Modal = document.querySelector('.modal6');
+
+img6.addEventListener('click', function(){
+    img6Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img6Modal.addEventListener('click', function(){
+    img6Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
+
+
+const img7 = document.querySelector('.img7');
+const img7Modal = document.querySelector('.modal7');
+
+img7.addEventListener('click', function(){
+    img7Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img7Modal.addEventListener('click', function(){
+    img7Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
+
+
+const img8 = document.querySelector('.img8');
+const img8Modal = document.querySelector('.modal8');
+
+img8.addEventListener('click', function(){
+    img8Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img8Modal.addEventListener('click', function(){
+    img8Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
+
+
+const img9 = document.querySelector('.img9');
+const img9Modal = document.querySelector('.modal9');
+
+img9.addEventListener('click', function(){
+    img9Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img9Modal.addEventListener('click', function(){
+    img9Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
 
+const img10 = document.querySelector('.img10');
+const img10Modal = document.querySelector('.modal10');
 
-    if (offset4 == 0){
-        dot4_1.classList.add('active')
-    } else {
-        dot4_1.classList.remove('active')
-    }
-
-    if (offset4 == 403){
-        dot4_2.classList.add('active')
-    } else {
-        dot4_2.classList.remove('active')
-    }
-
-    if (offset4 == 806){
-        dot4_3.classList.add('active')
-    } else {
-        dot4_3.classList.remove('active')
-    }
-
-    if (offset4 == 1209){
-        dot4_4.classList.add('active')
-    } else {
-        dot4_4.classList.remove('active')
-    }
-
-    if (offset4 == 1612){
-        dot4_5.classList.add('active')
-    } else {
-        dot4_5.classList.remove('active')
-    }
-
-    sliderLine4.style.left = -offset4 + 'px';
-});
+img10.addEventListener('click', function(){
+    img10Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img10Modal.addEventListener('click', function(){
+    img10Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img11 = document.querySelector('.img11');
+const img11Modal = document.querySelector('.modal11');
+
+img11.addEventListener('click', function(){
+    img11Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img11Modal.addEventListener('click', function(){
+    img11Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
-document.querySelector('.slider4-prev').addEventListener('click', function(){
-    offset4 = offset4 - 403 ;
+const img12 = document.querySelector('.img12');
+const img12Modal = document.querySelector('.modal12');
 
-    if (offset4 > 1209){
-        next4.classList.add('none')
-    } else if(offset4 <= 1209) {
-        next4.classList.remove('none')
-    }
-
-    if (offset4 < 403){
-        prev4.classList.add('none')
-    } else if (offset4 >= 403) {
-        prev4.classList.remove('none')
-    }
+img12.addEventListener('click', function(){
+    img12Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img12Modal.addEventListener('click', function(){
+    img12Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img13 = document.querySelector('.img13');
+const img13Modal = document.querySelector('.modal13');
+
+img13.addEventListener('click', function(){
+    img13Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img13Modal.addEventListener('click', function(){
+    img13Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img14 = document.querySelector('.img14');
+const img14Modal = document.querySelector('.modal14');
+
+img14.addEventListener('click', function(){
+    img14Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img14Modal.addEventListener('click', function(){
+    img14Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
+const img15 = document.querySelector('.img15');
+const img15Modal = document.querySelector('.modal15');
 
-    if (offset4 == 0){
-        dot4_1.classList.add('active')
-    } else{
-        dot4_1.classList.remove('active')
-    }
-
-    if (offset4 == 403){
-        dot4_2.classList.add('active')
-    } else {
-        dot4_2.classList.remove('active')
-    }
-
-    if (offset4 == 806){
-        dot4_3.classList.add('active')
-    } else {
-        dot4_3.classList.remove('active')
-    }
-
-    if (offset4 == 1209){
-        dot4_4.classList.add('active')
-    } else {
-        dot4_4.classList.remove('active')
-    }
-
-    if (offset4 == 1612){
-        dot4_5.classList.add('active')
-    } else {
-        dot4_5.classList.remove('active')
-    }
-
-    sliderLine4.style.left = -offset4 + 'px';
-});
+img15.addEventListener('click', function(){
+    img15Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img15Modal.addEventListener('click', function(){
+    img15Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
 
-dot4_1.addEventListener('click', function(){
-    offset4 = 0
-    sliderLine4.style.left = -offset4 + 'px';
+const img16 = document.querySelector('.img16');
+const img16Modal = document.querySelector('.modal16');
 
-    this.classList.add('active')
-    dot4_2.classList.remove('active')
-    dot4_3.classList.remove('active')
-    dot4_4.classList.remove('active')
-    dot4_5.classList.remove('active')
+img16.addEventListener('click', function(){
+    img16Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img16Modal.addEventListener('click', function(){
+    img16Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})
 
-    prev4.classList.add('none')
-    next4.classList.remove('none')
-});
 
-dot4_2.addEventListener('click', function(){
-    offset4 = 403
-    sliderLine4.style.left = -offset4 + 'px';
+const img17 = document.querySelector('.img17');
+const img17Modal = document.querySelector('.modal17');
 
-    this.classList.add('active')
-    dot4_1.classList.remove('active')
-    dot4_3.classList.remove('active')
-    dot4_4.classList.remove('active')
-    dot4_5.classList.remove('active')
-
-    prev4.classList.remove('none')
-    next4.classList.remove('none')
-});
-
-dot4_3.addEventListener('click', function(){
-    offset4 = 806
-    sliderLine4.style.left = -offset4 + 'px';
-
-    this.classList.add('active')
-    dot4_2.classList.remove('active')
-    dot4_1.classList.remove('active')
-    dot4_4.classList.remove('active')
-    dot4_5.classList.remove('active')
-
-    prev4.classList.remove('none')
-    next4.classList.remove('none')
-});
-
-dot4_4.addEventListener('click', function(){
-    offset4 = 1209
-    sliderLine4.style.left = -offset4 + 'px';
-
-    this.classList.add('active')
-    dot4_2.classList.remove('active')
-    dot4_3.classList.remove('active')
-    dot4_1.classList.remove('active')
-    dot4_5.classList.remove('active')
-
-    prev4.classList.remove('none')
-    next4.classList.remove('none')
-});
-
-dot4_5.addEventListener('click', function(){
-    offset4 = 1612
-    sliderLine4.style.left = -offset4 + 'px';
-
-    this.classList.add('active')
-    dot4_2.classList.remove('active')
-    dot4_1.classList.remove('active')
-    dot4_4.classList.remove('active')
-    dot4_3.classList.remove('active')
-
-    next4.classList.add('none')
-    prev4.classList.remove('none')
-});
+img17.addEventListener('click', function(){
+    img17Modal.classList.add('active');
+    body.style.overflow = 'hidden';
+    
+})
+img17Modal.addEventListener('click', function(){
+    img17Modal.classList.remove('active');
+    body.style.overflow = 'visible';
+})

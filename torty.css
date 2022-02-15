@@ -129,3 +129,72 @@ _______________________*/
     display: flex;
     box-sizing: border-box;
 }
+
+/*CUPCAKES_________________
+_______________________*/
+.wrapper1{
+    padding-left: 95px;
+    padding-right: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 100%;
+    height: 800px;
+    
+}
+.cupcakes-wrapper{
+    width: 600px;
+    height: 640px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cupcakes-prev{
+    width: 50px;
+    height: 50px;
+}
+.cupcakes-next{
+    width: 50px;
+    height: 50px;
+}
+.cupcakes{
+    width: 100%;
+    overflow: hidden;
+}
+.cupcakes-slider{
+    box-shadow: 2px 4px 30px #000;
+    margin: 30px auto;
+    width: 358px;
+    height: 640px;
+    overflow: hidden;
+}
+.cupcakes-slider-line{
+    margin: 0 auto;
+    left: 0;
+    transition: all ease 1s;
+    display: flex;
+    position: relative; 
+}
+.cupcake1{
+    width: 358px;
+    height: 640px;
+}
+.cupcake2{
+    width: 358px;
+    height: 640px;
+}
+.cupcake3{
+    width: 358px;
+    height: 640px;
+}
+.cupcake4{
+    width: 358px;
+    height: 640px;
+}
+
+.cupcakes-h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #484f5b;
+}
+
